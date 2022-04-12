@@ -52,4 +52,4 @@ const Card = styled.div`
   }
 `
 
-export default Cuisine
+export default Cuisine;
