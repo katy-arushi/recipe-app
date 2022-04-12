@@ -11,11 +11,18 @@ function Popular() {
   }, []); // run getPopular once, on mount
 
   const getPopular = async () => {
-    const api = await fetch(
-      `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`
-    );
-    const data = await api.json();
-    setPopular(data.recipes);
+    const check = localStorage.getItem("popular"); // check LS to prevent refetching the popular recipes
+
+    if (check) {
+      setPopular(JSON.parse(check)); // get str from LS and parse to JSON
+    } else {
+      // if nothing in LS, then fetch
+      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`);
+      const data = await api.json();
+      localStorage.setItem("popular", JSON.stringify(data.recipes)); // set in LS
+      setPopular(data.recipes); // set state
+      console.log(data.recipes);
+    }
   };
 
   return (
@@ -33,8 +40,8 @@ function Popular() {
         >
           {popular.map(recipe => {
             return (
-              <SplideSlide>
-                <Card key={recipe.id}>
+              <SplideSlide key={recipe.id}>
+                <Card>
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title} />
                   <Gradient />
