@@ -10,7 +10,7 @@ function Search() {
 
   const submitHandler = e => {
     e.preventDefault();
-    navigate('/searched/' + input)
+    navigate('/searched/' + input) // on submit, navigate to searched page with results
   }
 
   return (
