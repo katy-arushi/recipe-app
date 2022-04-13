@@ -1,6 +1,7 @@
 import Pages from "./pages/Pages";
 import Search from "./components/Search";
 import Category from "./components/Category";
+
 import { BrowserRouter, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { GiKnifeFork } from "react-icons/gi";
@@ -13,8 +14,8 @@ function App() {
           <GiKnifeFork />
           <Logo to={'/'}>Delicious!</Logo>
         </Nav>
-        <Search/>
-        <Category/>
+        <Search />
+        <Category />
         <Pages />
       </BrowserRouter>
     </div>
