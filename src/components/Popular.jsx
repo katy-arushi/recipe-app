@@ -22,7 +22,6 @@ function Popular() {
       const data = await api.json();
       localStorage.setItem("popular", JSON.stringify(data.recipes)); // set in LS
       setPopular(data.recipes); // set state
-      console.log(data.recipes);
     }
   };
 
