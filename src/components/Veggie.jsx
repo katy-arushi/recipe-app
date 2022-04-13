@@ -11,7 +11,7 @@ function Veggie() {
 
   useEffect(() => {
     getVeggie();
-  }, []); // run getPopular once, on mount
+  }, []); // run getVeggie once, on mount
 
   const getVeggie = async () => {
     const check = localStorage.getItem("veggie"); // check LS to prevent refetching the popular recipes
@@ -24,7 +24,6 @@ function Veggie() {
       const data = await api.json();
       localStorage.setItem("veggie", JSON.stringify(data.recipes)); // set in LS
       setVeggie(data.recipes); // set state
-      console.log(data.recipes);
     }
   };
 
