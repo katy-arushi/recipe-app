@@ -4,10 +4,10 @@ import Veggie from "../components/Veggie";
 function Home() {
   return (
     <div>
-      <Veggie />
       <Popular />
-    </div>
-  )
+      <Veggie />
+		</div>
+	);
 }
 
-export default Home
+export default Home;
