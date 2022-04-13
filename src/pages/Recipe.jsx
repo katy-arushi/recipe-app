@@ -9,14 +9,16 @@ function Recipe() {
   const [activeTab, setActiveTab] = useState("instructions");
 
   const fetchDetails = async () => {
-    const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information/?apiKey=${process.env.REACT_APP_API_KEY}`);
+    const data = await fetch(`
+      https://api.spoonacular.com/recipes/${params.name}/information/?apiKey=${process.env.REACT_APP_API_KEY}`
+    );
     const detailData = await data.json();
     setDetails(detailData);
-  }
+  };
 
   useEffect(() => {
     fetchDetails();
-  }, [params.name])
+  }, [params.name]);
 
   return (
 		<DetailWrapper>
@@ -39,8 +41,8 @@ function Recipe() {
 				</Button>
 				{activeTab === 'instructions' && (
 					<div>
-						<h3>dangerouslySetInnerHTML={{ __html: details.summary }}</h3>
-						<h3>dangerouslySetInnerHTML={{ __html: details.instructions }}</h3>
+						<h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
+						<h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
 					</div>
 				)}
 				{activeTab === 'ingredients' && (
@@ -62,6 +64,7 @@ const DetailWrapper = styled.div`
 
   .active {
     background: linear-gradient(35deg, #494949, #313131);
+    color: white;
   }
 
   h2 {
