@@ -19,24 +19,40 @@ function Recipe() {
   }, [params.name])
 
   return (
-    <DetailWrapper>
-      <div>
-        <h2>{details.title}</h2>
-        <img src={details.image} alt={details.title}/>
-      </div>
-      <Info>
-        <Button className={activeTab === 'instructions' ? 'active' : ''} onClick={() => setActiveTab("instructions")}>
-          Instructions
-        </Button>
-        <Button className={activeTab === 'ingredients' ? 'active' : ''} onClick={() => setActiveTab("ingredients")}>
-          Ingredients
-        </Button>
-        <div>
-          <h3>setInnerHTML={{__html: details.summary}}</h3>
-        </div>
-      </Info>
-    </DetailWrapper>
-  )
+		<DetailWrapper>
+			<div>
+				<h2>{details.title}</h2>
+				<img src={details.image} alt={details.title} />
+			</div>
+			<Info>
+				<Button
+					className={activeTab === 'instructions' ? 'active' : ""}
+					onClick={() => setActiveTab('instructions')}
+				>
+					Instructions
+				</Button>
+				<Button
+					className={activeTab === 'ingredients' ? 'active' : ""}
+					onClick={() => setActiveTab('ingredients')}
+				>
+					Ingredients
+				</Button>
+				{activeTab === 'instructions' && (
+					<div>
+						<h3>dangerouslySetInnerHTML={{ __html: details.summary }}</h3>
+						<h3>dangerouslySetInnerHTML={{ __html: details.instructions }}</h3>
+					</div>
+				)}
+				{activeTab === 'ingredients' && (
+					<ul>
+						{details.extendedIngredients.map((ingredient) => (
+							<li key={ingredient.id}>{ingredient.original}</li>
+						))}
+					</ul>
+				)}
+			</Info>
+		</DetailWrapper>
+	);
 }
 
 const DetailWrapper = styled.div`
