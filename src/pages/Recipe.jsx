@@ -23,7 +23,7 @@ function Recipe() {
   return (
 		<DetailWrapper>
 			<div>
-				<h2>{details.title}</h2>
+        <h2 style={{ textAlign: 'center' }}>{details.title}</h2>
         <img src={details.image} alt={details.title} style={{ borderRadius: '2rem' }}/>
 			</div>
 			<Info>
@@ -41,7 +41,9 @@ function Recipe() {
 				</Button>
 				{activeTab === 'instructions' && (
 					<div>
-						<h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
+            <h2 style={{paddingTop: '2rem'}}>About</h2>
+            <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
+            <h2>Instructions</h2>
 						<h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
 					</div>
 				)}
