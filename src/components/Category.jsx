@@ -14,9 +14,9 @@ function Category() {
 				<FaHamburger />
 				<h4>American</h4>
 			</SLink>
-			<SLink to={'/cuisine/thai'}>
+			<SLink to={'/cuisine/indian'}>
 				<GiNoodles />
-				<h4>Thai</h4>
+				<h4>Indian</h4>
 			</SLink>
 			<SLink to={'/cuisine/japanese'}>
 				<GiChopsticks />
