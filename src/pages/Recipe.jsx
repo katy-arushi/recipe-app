@@ -24,7 +24,7 @@ function Recipe() {
 		<DetailWrapper>
 			<div>
 				<h2>{details.title}</h2>
-				<img src={details.image} alt={details.title} />
+        <img src={details.image} alt={details.title} style={{ borderRadius: '2rem' }}/>
 			</div>
 			<Info>
 				<Button
