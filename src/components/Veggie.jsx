@@ -14,7 +14,7 @@ function Veggie() {
   }, []); // run getVeggie once, on mount
 
   const getVeggie = async () => {
-    const check = localStorage.getItem("veggie"); // check LS to prevent refetching the popular recipes
+    const check = localStorage.getItem("veggie"); // check LS to prevent refetching the veggie recipes
 
     if (check) {
       setVeggie(JSON.parse(check)); // get str from LS and parse to JSON
@@ -30,7 +30,7 @@ function Veggie() {
   return (
     <div>
       <Wrapper>
-        <h3>Vegetarian Picks</h3>
+        <h3>Trending Vegetarian Recipes</h3>
         <Splide
           options={{
             perPage: 3,
