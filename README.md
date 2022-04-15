@@ -14,7 +14,6 @@ As for **future features**, I'd like to add more filters, maybe by allowing user
 
 **A warning**: the Spoonacular API limits you to 150 requests a day. This is especially a problem until you implement saving the main page recipes to localstorage, as every minor change makes the app refresh. There are ways to... get creative and get around the 150 request limit but it's definitely annoying. 
 
------
 ## Available Scripts
 ### `npm start`
 
