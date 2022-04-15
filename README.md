@@ -6,13 +6,13 @@ The app fetches data from the [Spoonacular API](https://spoonacular.com/food-api
 
 Inspired by this [tutorial](https://www.youtube.com/watch?v=xc4uOzlndAk) from [Dev Ed](https://github.com/developedbyed/).
 
-This tutorial was a great review of basic React concepts such as the useState and useEffect hooks, as well as fetching API data and mapping over data to create components. I wasn't a huge fan of the styling done by Dev Ed so I've made some changes as well as some improvements such as adding more cuisines to filter by and changing the app to feature vegetarian or vegan recipes only, as I am vegetarian. I really like the search feature, which actually wasn't that complex to implement.
+This tutorial was a great review of basic **React** concepts such as the useState and useEffect hooks, as well as fetching API data and mapping over data to create components. I wasn't a huge fan of the styling done by Dev Ed so I've made some changes as well as some improvements such as adding more cuisines to filter by and changing the app to feature vegetarian or vegan recipes only, as I am vegetarian. I really like the search feature, which actually wasn't that complex to implement.
 
-I really liked the use of styled components for styling in this app. Definitely going to use those going forward because they seem so simple and intuitive.
+I really liked the use of **styled components** for styling in this app. Definitely going to use those going forward because they seem so simple and intuitive.
 
-As for future features, I'd like to add more filters, maybe by allowing users to search for specific types of recipes such as beverages, desserts, etc. Maybe a user could also be able to favourite recipes they liked. Looking at the API docs, it's also pretty easy to implement a 'What's for dinner' app based on ingredients that a user already has, and this could be another interesting feature.
+As for **future features**, I'd like to add more filters, maybe by allowing users to search for specific types of recipes such as beverages, desserts, etc. Maybe a user could also be able to favourite recipes they liked. Looking at the API docs, it's also pretty easy to implement a 'What's for dinner' app based on ingredients that a user already has, and this could be another interesting feature.
 
-A warning: the Spoonacular API limits you to 150 requests a day. This is especially a problem until you implement saving the main page recipes to localstorage, as every minor change makes the app refresh. There are ways to... get creative and get around the 150 request limit but it's definitely annoying. 
+**A warning**: the Spoonacular API limits you to 150 requests a day. This is especially a problem until you implement saving the main page recipes to localstorage, as every minor change makes the app refresh. There are ways to... get creative and get around the 150 request limit but it's definitely annoying. 
 
 -----
 ## Available Scripts
