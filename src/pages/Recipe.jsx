@@ -28,6 +28,12 @@ function Recipe() {
 			</div>
 			<Info>
 				<Button
+					className={activeTab === 'about' ? 'active' : ""}
+          onClick={() => setActiveTab('about')}
+				>
+					About
+				</Button>
+				<Button
 					className={activeTab === 'instructions' ? 'active' : ""}
 					onClick={() => setActiveTab('instructions')}
 				>
@@ -39,11 +45,15 @@ function Recipe() {
 				>
 					Ingredients
 				</Button>
-				{activeTab === 'instructions' && (
+				{activeTab === 'about' && (
 					<div>
             <h2 style={{paddingTop: '2rem'}}>About</h2>
             <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
-            <h2>Instructions</h2>
+					</div>
+				)}
+				{activeTab === 'instructions' && (
+					<div>
+            <h2 style={{ paddingTop: '2rem' }}>Instructions</h2>
 						<h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
 					</div>
 				)}
