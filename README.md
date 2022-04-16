@@ -6,6 +6,7 @@ The app fetches data from the [Spoonacular API](https://spoonacular.com/food-api
 
 Inspired by this [tutorial](https://www.youtube.com/watch?v=xc4uOzlndAk) from [Dev Ed](https://github.com/developedbyed/).
 
+### Overall thoughts on the project
 This tutorial was a great review of basic **React** concepts such as the useState and useEffect hooks, as well as fetching API data and mapping over data to create components. I feel pretty solid about basic React now and I'm ready to take on more complex hooks and concepts. I wasn't a huge fan of the styling done by Dev Ed so I've made some changes as well as some improvements such as adding more cuisines to filter by and changing the app to feature vegetarian or vegan recipes only, as I am vegetarian. I really like the search feature, which actually wasn't that complex to implement.
 
 I really liked the use of **styled components** for styling in this app. Definitely going to use those going forward because they seem so simple and intuitive.
