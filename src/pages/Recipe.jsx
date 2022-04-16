@@ -6,7 +6,7 @@ function Recipe() {
 
   let params = useParams();
   const [details, setDetails] = useState({});
-  const [activeTab, setActiveTab] = useState("instructions");
+  const [activeTab, setActiveTab] = useState("about");
 
   const fetchDetails = async () => {
     const data = await fetch(`
@@ -57,6 +57,7 @@ function Recipe() {
 						<h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
 					</div>
 				)}
+        <h2 style={{ paddingTop: '2rem' }}>Ingredients</h2>
 				{activeTab === 'ingredients' && (
 					<ul>
 						{details.extendedIngredients.map((ingredient) => (
@@ -81,6 +82,7 @@ const DetailWrapper = styled.div`
 
   h2 {
     margin-bottom: 2rem;
+    font-size: 2rem;
   }
 
   li {
@@ -100,6 +102,7 @@ const Button = styled.button`
   border: 2px solid black;
   margin-right: 2rem;
   font-weight: 600;
+
 `
 
 const Info = styled.div`
