@@ -47,17 +47,17 @@ function Recipe() {
 				</Button>
 				{activeTab === 'about' && (
 					<div>
-            <h2 style={{paddingTop: '2rem'}}>About</h2>
+            <h2>About</h2>
             <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
 					</div>
 				)}
 				{activeTab === 'instructions' && (
 					<div>
-            <h2 style={{ paddingTop: '2rem' }}>Instructions</h2>
+            <h2>Instructions</h2>
 						<h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
 					</div>
 				)}
-        <h2 style={{ paddingTop: '2rem' }}>Ingredients</h2>
+        <h2>Ingredients</h2>
 				{activeTab === 'ingredients' && (
 					<ul>
 						{details.extendedIngredients.map((ingredient) => (
@@ -83,6 +83,7 @@ const DetailWrapper = styled.div`
   h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
+    padding-top: 2rem;
   }
 
   li {
