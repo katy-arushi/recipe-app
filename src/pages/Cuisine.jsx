@@ -55,6 +55,7 @@ const Card = styled(motion.div)`
   h4 {
     text-align: center;
     padding: 1rem;
+    font-size: 1.5rem;
   }
 `
 
