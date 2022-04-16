@@ -23,7 +23,7 @@ function Recipe() {
   return (
 		<DetailWrapper>
 			<div>
-        <h2 style={{ textAlign: 'center' }}>{details.title}</h2>
+        <h2 style={{ textAlign: 'center', textDecoration: 'none' }}>{details.title}</h2>
         <img src={details.image} alt={details.title} style={{ borderRadius: '2rem' }}/>
 			</div>
 			<Info>
@@ -57,13 +57,15 @@ function Recipe() {
 						<h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
 					</div>
 				)}
-        <h2>Ingredients</h2>
-				{activeTab === 'ingredients' && (
-					<ul>
-						{details.extendedIngredients.map((ingredient) => (
-							<li key={ingredient.id}>{ingredient.original}</li>
-						))}
-					</ul>
+        {activeTab === 'ingredients' && (
+          <div>
+            <h2>Ingredients</h2>
+            <ul>
+              {details.extendedIngredients.map((ingredient) => (
+                <li key={ingredient.id}>{ingredient.original}</li>
+              ))}
+            </ul>
+          </div>
 				)}
 			</Info>
 		</DetailWrapper>
@@ -84,15 +86,20 @@ const DetailWrapper = styled.div`
     margin-bottom: 2rem;
     font-size: 2rem;
     padding-top: 2rem;
+    text-decoration: underline;
   }
 
   li {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
   }
 
   ul {
     margin-top: 2rem;
+  }
+
+  h3 {
+    text-decoration: none;
   }
 `
 
