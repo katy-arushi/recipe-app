@@ -1,4 +1,4 @@
-# Veggielicious 🥗
+# Veggielicious 🌱
 
 **Veggielicious** is a recipe app that features only vegetarian or vegan recipes. 
 Users can filter recipes by cuisine, such as Greek, Italian, Indian, Spanish, and more.
