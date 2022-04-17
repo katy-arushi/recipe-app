@@ -78,8 +78,8 @@ const DetailWrapper = styled.div`
   display: flex;
 
   .active {
-    background: linear-gradient(35deg, #494949, #313131);
-    color: white;
+    background-image: linear-gradient(315deg, #006D77 0%, #83C5BE 95%);
+    border-color: #00383D;
   }
 
   h2 {
@@ -96,6 +96,7 @@ const DetailWrapper = styled.div`
 
   ul {
     margin-top: 2rem;
+    font-weight: 600;
   }
 
   h3 {
@@ -106,12 +107,13 @@ const DetailWrapper = styled.div`
 const Button = styled.button`
   padding: 1rem 2rem;
   color: #313131;
-  background: white;
   border: 2px solid black;
   margin-right: 2rem;
   font-weight: 600;
   border-radius: 2rem;
   font-size: 1rem;
+  background: linear-gradient(35deg, #494949, #313131);
+  color: white;
 `
 
 const Info = styled.div`
