@@ -4,6 +4,8 @@
 Users can filter recipes by cuisine, such as Greek, Italian, Indian, Spanish, and more.
 The app fetches data from the [Spoonacular API](https://spoonacular.com/food-api).
 
+## **Access the deployed app [here](https://veggielicious.netlify.app/)!**
+
 Inspired by this [tutorial](https://www.youtube.com/watch?v=xc4uOzlndAk) from [Dev Ed](https://github.com/developedbyed/).
 
 ### Overall thoughts on the project
