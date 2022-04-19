@@ -21,7 +21,7 @@ function Veggie() {
     } else {
       // if nothing in LS, then fetch
       const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`);
-      const data = await api.json();
+      const data = await api.json().catch((err) => console.log(err))
       localStorage.setItem("veggie", JSON.stringify(data.recipes)); // set in LS
       setVeggie(data.recipes); // set state
     }

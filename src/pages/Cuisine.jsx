@@ -15,7 +15,7 @@ function Cuisine() {
       setCuisine(JSON.parse(check)); // get str from LS and parse to JSON
     } else {
       const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&diet=vegetarian&cuisine=${name}`);
-      const recipes = await data.json();
+      const recipes = await data.json().catch((err) => console.log(err))
       localStorage.setItem(`cuisine ${name}`, JSON.stringify(recipes.results)); // set in LS
       setCuisine(recipes.results); // set state
     }
