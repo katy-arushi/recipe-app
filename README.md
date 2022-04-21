@@ -17,7 +17,7 @@ I really liked the use of **styled components** for styling in this app. Definit
 
 As for **future features**, I'd like to add more filters, maybe by allowing users to search for specific types of recipes such as beverages, desserts, etc. Maybe a user could also be able to favourite recipes they liked. Looking at the API docs, it's also pretty easy to implement a 'What's for dinner' app based on ingredients that a user already has, and this could be another interesting feature. I also think there should be error handling for the API requests to display a message for when the API can't get the data, since it's pretty often that I'm running out of API requests!
 
-***A warning***: the Spoonacular API limits you to 150 requests a day. This is especially a problem until you implement saving the main page recipes to localstorage, as every minor change makes the app refresh. There are workarounds to the 150 request limit but it's definitely annoying. 
+***A warning***: the Spoonacular API limits you to 150 requests a day. This is especially a problem until you implement saving the recipes to localstorage, as every minor change makes the app refresh. There are workarounds to the 150 request limit but it's definitely annoying. 
 
 ## Available Scripts
 ### `npm start`
