@@ -8,6 +8,8 @@ The app fetches data from the [Spoonacular API](https://spoonacular.com/food-api
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b8a15638-1ac1-4bc2-bda9-a5e8c021c412/deploy-status)](https://app.netlify.com/sites/veggielicious/deploys)
 
+![screenshot](https://github.com/katy-arushi/recipe-app/blob/main/public/home.png?raw=true)
+
 Inspired by this [tutorial](https://www.youtube.com/watch?v=xc4uOzlndAk) from [Dev Ed](https://github.com/developedbyed/).
 
 ### Overall thoughts on the project
