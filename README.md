@@ -4,9 +4,9 @@
 Users can filter recipes by cuisine, such as Greek, Italian, Indian, Spanish, and more.
 The app fetches data from the [Spoonacular API](https://spoonacular.com/food-api).
 
-## **Access the deployed app [here](https://veggielicious.netlify.app/)!**
+Built with React and Styled Components.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b8a15638-1ac1-4bc2-bda9-a5e8c021c412/deploy-status)](https://app.netlify.com/sites/veggielicious/deploys)
+## **Access the deployed app [here](https://veggielicious.netlify.app/)!**
 
 ![screenshot](https://github.com/katy-arushi/recipe-app/blob/main/public/home.png?raw=true)
 
@@ -22,6 +22,7 @@ As for **future features**, I'd like to add more filters, maybe by allowing user
 ***A warning***: the Spoonacular API limits you to 150 requests a day. This is especially a problem until you implement saving the recipes to localstorage, as every minor change makes the app refresh. There are workarounds to the 150 request limit but it's definitely annoying. 
 
 ## Available Scripts
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b8a15638-1ac1-4bc2-bda9-a5e8c021c412/deploy-status)](https://app.netlify.com/sites/veggielicious/deploys)
 ### `npm start`
 
 Runs the app in the development mode.\
